@@ -26,12 +26,17 @@ nav{
 }
 .secondSection li{
     flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.thirdSection{
+    width: 100%;
 }
 .thirdSection h1{
     font-size: 20px;
 }
 .thirdSection li{
     font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .thirdSection img{
     display: none;
@@ -45,5 +50,34 @@ nav{
 }
 footer div ul{
     display: none;
-    height: 70px;
+    
 } 
+footer{
+    height: 70px;
+}
+.leftSection{
+    width: 100%;
+}
+.forthSection{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+}
+.forthSection ul{
+    list-style: none;
+  }
+  .forthSection ul li{
+    margin: 20px 0;
+    font-size: 30px;
+    text-align: center;
+  }
+  .forthSection ul li a{
+    color: white;
+    text-decoration: none;
+  }
+  .forthSection img{
+    margin: 0 20px;
+  }
