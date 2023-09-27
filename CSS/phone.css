@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+nav{
+    flex-direction: column;
+    height: 90px;
+}
+.leftSection{
+    font-size: 20px;
+}
+.rightSection img{
+    width: 100px;
+    margin: 10px 10px;
+}
+.secondSection{
+    flex-direction: column;
+    margin: 0 70px;
+}
+.secondSection h2{
+    font-size: 15px;
+}
+.secondSection ul li{
+    font-size: 10px;
+    margin: 2px 2px;
+    flex-direction: column;
+}
+.secondSection li{
+    flex-direction: column;
+}
+.thirdSection h1{
+    font-size: 15px;
+}
+.thirdSection li{
+    font-size: 10px;
+}
+.thirdSection img{
+    display: none;
+}
+.right{
+    font-size: 15px;
+    margin: 0;
+}
+.right1{
+    margin: 10px 10px;
+}
