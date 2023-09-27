@@ -17,10 +17,10 @@ nav{
     margin: 0 70px;
 }
 .secondSection h2{
-    font-size: 15px;
+    font-size: 20px;
 }
 .secondSection ul li{
-    font-size: 10px;
+    font-size: 16px;
     margin: 2px 2px;
     flex-direction: column;
 }
@@ -28,10 +28,10 @@ nav{
     flex-direction: column;
 }
 .thirdSection h1{
-    font-size: 15px;
+    font-size: 20px;
 }
 .thirdSection li{
-    font-size: 10px;
+    font-size: 16px;
 }
 .thirdSection img{
     display: none;
@@ -43,3 +43,7 @@ nav{
 .right1{
     margin: 10px 10px;
 }
+footer div ul{
+    display: none;
+    height: 70px;
+} 
