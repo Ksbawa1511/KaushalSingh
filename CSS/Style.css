@@ -168,8 +168,10 @@ footer div ul li a{
 }
 .forthSection ul{
   list-style: none;
+  display: none;
 }
 .forthSection ul li a{
   color: white;
   text-decoration: none;
+  display: none;
 }
