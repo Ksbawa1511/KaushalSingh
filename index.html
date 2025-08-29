@@ -3,142 +3,196 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kaushal - Web Devloper Portfolio</title>
+    <title>Kaushal Singh - Web Developer Portfolio</title>
     <link rel="stylesheet" href="CSS/Style.css" />
-    <link rel="stylesheet" media=" screen and (max-width: 1170px)" href="CSS/phone.css">
+    <link rel="stylesheet" href="CSS/phone.css" media="(max-width: 768px)">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Mooli&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="left">Kaushal Singh</div>
-        <div class="right">
-          <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#Contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+         <header>
+       <nav>
+         <div class="logo">Kaushal Singh</div>
+         
+         <!-- Hamburger Menu Button -->
+         <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+           <span class="hamburger-line"></span>
+           <span class="hamburger-line"></span>
+           <span class="hamburger-line"></span>
+         </button>
+         
+         
+         
+         <div class="nav-links" id="navLinks">
+           <ul>
+             <li><a href="#home">Home</a></li>
+             <li><a href="#about">About</a></li>
+             <li><a href="#education">Education</a></li>
+             <li><a href="#contact">Contact</a></li>
+           </ul>
+         </div>
+       </nav>
+     </header>
+
     <main>
-      <section id="Home" class="firstSection">
-        <div class="leftSection">
-          My name is <span class="purple">Kaushal Singh</span>
-          <div>I am a Passionate</div>
-          <span id="element"></span>
+      <section id="home" class="hero-section">
+        <div class="hero-content">
+          <h1>Hi, I'm <span class="highlight">Kaushal Singh</span></h1>
+          <p class="tagline">I'm a passionate</p>
+                     <div class="typing-text">Web Developer</div>
+          <p class="hero-description">
+            A dedicated web developer focused on creating clean, user-friendly digital experiences.
+          </p>
         </div>
-        <div class="rightSection">
-          <img src="bg.png" />
-        </div>
-      </section>
-      <hr />
-      <section id="About" class="secondSection">
-        <div class="right1">
-          <h2>Personal Details</h2>
-          <ul>
-            <li>Mandi Dabwali, Haryana</li>
-            <li>15-Nov-2000</li>
-            <li>Ksbawa1511@gmail.com</li>
-            <li>90179-58761</li>
-          </ul>
-        </div>
-        <div class="right1">
-          <h2>Hobbies</h2>
-          <ul>
-            <li>Listening Music</li>
-            <li>Watching Movies</li>
-            <li>Content Creation</li>
-            <li>Traveling</li>
-            <li>Gaming</li>
-          </ul>
-        </div>
-        <div class="right1">
-          <h2>Skills</h2>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React(Basic)</li>
-          </ul>
-        </div>
-        
-      </section>
-      <hr />
-      <section class="thirdSection">
-        <div class="leftSection">
-          <h1>Education Qualifications</h1>
-          <ul>
-             <li>
-              Masters in Computer Application(MCA)<br />
-              From: Chandigarh Universty<br />
-              Graduation Year: 2025
-            </li>
-            <li>
-              Bachelor in Computer Application(BCA)<br />
-              From: Punjabi Universty, Patiala<br />
-              Graduation Year: 2022
-            </li>
-            <li>
-              Higher Secondary<br />
-              From: Central Board Of Secondary Education<br />
-              Graduation Year: 2018
-            </li>
-            <li>
-              Secondary<br />
-              From: Central Board Of Secondary Education<br />
-              Graduation Year: 2016
-            </li>
-          </ul>
-        </div>
-        <div class="rightSection">
-          <img src="bg.png" />
+        <div class="hero-image">
+          <img src="IMG_6452.jpg" alt="Kaushal Singh" />
         </div>
       </section>
-      <hr />
+
+      <section id="about" class="about-section">
+        <div class="container">
+          <h2>About Me</h2>
+          <div class="about-grid">
+            <div class="about-card">
+              <h3>Personal Details</h3>
+              <ul>
+                <li><strong>Location:</strong> Mandi Dabwali, Haryana</li>
+                <li><strong>Date of Birth:</strong> November 15, 2000</li>
+                <li><strong>Email:</strong> ksbawa1511@gmail.com</li>
+                <li><strong>Phone:</strong> +91 90179-58761</li>
+              </ul>
+            </div>
+            
+            <div class="about-card">
+              <h3>Skills</h3>
+              <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React.js</li>
+                <li>Responsive Design</li>
+                <li>Git & GitHub</li>
+              </ul>
+            </div>
+            
+            <div class="about-card">
+              <h3>Interests</h3>
+              <ul>
+                <li>Music & Podcasts</li>
+                <li>Film & Entertainment</li>
+                <li>Content Creation</li>
+                <li>Travel & Exploration</li>
+                <li>Gaming & Technology</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="education-section">
+        <div class="container">
+          <h2>Education</h2>
+          <div class="education-timeline">
+            <div class="education-item">
+              <div class="education-content">
+                <h3>Master of Computer Applications (MCA)</h3>
+                <p class="institution">Chandigarh University</p>
+                <p class="year">2025</p>
+              </div>
+            </div>
+            
+            <div class="education-item">
+              <div class="education-content">
+                <h3>Bachelor of Computer Applications (BCA)</h3>
+                <p class="institution">Punjabi University, Patiala</p>
+                <p class="year">2022</p>
+              </div>
+            </div>
+            
+            <div class="education-item">
+              <div class="education-content">
+                <h3>Higher Secondary Education</h3>
+                <p class="institution">Central Board of Secondary Education</p>
+                <p class="year">2018</p>
+              </div>
+            </div>
+            
+            <div class="education-item">
+              <div class="education-content">
+                <h3>Secondary Education</h3>
+                <p class="institution">Central Board of Secondary Education</p>
+                <p class="year">2016</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <section class="forth">
-      <div class="forth"></div>
-    </section>
-    <footer id="Contact">
-      <div class="up">
-        All rights Reserved &copy; Kaushal Singh
-      </div>
-      <div>
 
-        <ul>
-          <li class="item1">
-            <img src="yt.png">
-            <a href="https://www.youtube.com/@mystic_vloger" class="btn" target="_blank"
-              >Youtube</a
-            >
-          </li>
-          <li class="item1">
-            <img src="insta.jpeg">
-            <a href="https://instagram.com/kaushal_singh_bawa_?igshid=MzMyNGUyNmU2YQ==" class="btn" target="_blank">Instagram</a>
-          </li>
-          <li class="item1"><img src="fb1.png"><a href="https://www.facebook.com/profile.php?id=100007309396619&mibextid=ZbWKwL" class="btn" target="_blank">Facebook</a></li>
-          <li class="item1"><img src="th.png"><a href="https://www.threads.net/@kaushal_singh_bawa_" class="btn" target="_blank">Threads</a></li>
-          <li class="item1"><img src="x.png"><a href="https://x.com/Kaushal_Singh15?s=20" target="_blank">Twitter</a></li>
-     
-        </ul>
+    <footer id="contact">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Connect With Me</h3>
+            <div class="social-links">
+              <a href="https://www.youtube.com/@mystic_vloger" target="_blank" class="social-link">
+                <img src="yt.png" alt="YouTube">
+                <span>YouTube</span>
+              </a>
+              <a href="https://instagram.com/kaushal_singh_bawa_?igshid=MzMyNGUyNmU2YQ==" target="_blank" class="social-link">
+                <img src="insta.jpeg" alt="Instagram">
+                <span>Instagram</span>
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=100007309396619&mibextid=ZbWKwL" target="_blank" class="social-link">
+                <img src="fb1.png" alt="Facebook">
+                <span>Facebook</span>
+              </a>
+              <a href="https://www.threads.net/@kaushal_singh_bawa_" target="_blank" class="social-link">
+                <img src="th.png" alt="Threads">
+                <span>Threads</span>
+              </a>
+              <a href="https://x.com/Kaushal_Singh15?s=20" target="_blank" class="social-link">
+                <img src="x.png" alt="Twitter">
+                <span>Twitter</span>
+              </a>
+            </div>
+          </div>
+          
+          <div class="footer-bottom">
+            <p>&copy; 2024 Kaushal Singh. All rights reserved.</p>
+          </div>
+        </div>
       </div>
-    
-     
-      
-      
+    </footer>
 
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
-      var typed = new Typed("#element", {
-        strings: ["Web Developer", "Youtuber", "Web Designer"],
-        typeSpeed: 50,
+      // Hamburger Menu Functionality
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.getElementById('navLinks');
+      
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+      });
+      
+      // Close menu when clicking on a link
+      const navItems = document.querySelectorAll('.nav-links a');
+      navItems.forEach(item => {
+        item.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          navLinks.classList.remove('active');
+        });
+      });
+      
+      // Close menu when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+          hamburger.classList.remove('active');
+          navLinks.classList.remove('active');
+        }
       });
     </script>
   </body>

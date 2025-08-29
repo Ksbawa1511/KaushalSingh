@@ -1,83 +1,469 @@
-body{
-    background-color: rgb(0, 0, 0);
-}
-nav{
-    flex-direction: column;
-    height: 90px;
-}
-.leftSection{
-    font-size: 20px;
-}
-.rightSection img{
-    width: 100px;
-    margin: 10px 10px;
-}
-.secondSection{
-    flex-direction: column;
-    margin: 0 70px;
-}
-.secondSection h2{
-    font-size: 20px;
-}
-.secondSection ul li{
-    font-size: 16px;
-    margin: 2px 2px;
-    flex-direction: column;
-}
-.secondSection li{
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.thirdSection{
-    width: 100%;
-}
-.thirdSection h1{
-    font-size: 20px;
-}
-.thirdSection li{
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.thirdSection img{
-    display: none;
-}
-.right{
-    font-size: 15px;
-    margin: 0;
-}
-.right1{
-    margin: 10px 10px;
-}
-footer div ul{
-    display: none;
-    
-} 
-footer{
-    height: 70px;
-}
-.leftSection{
-    width: 100%;
-}
-.forthSection{
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    color: white;
-}
-.forthSection ul{
-    list-style: none;
+/* Additional Mobile-Specific Styles */
+/* This file provides extra mobile optimizations */
+
+/* Ultra-small mobile devices (up to 360px) */
+@media (max-width: 360px) {
+  /* Hamburger menu optimizations */
+  .hamburger {
+    padding: 0.25rem;
   }
-  .forthSection ul li{
-    margin: 20px 0;
-    font-size: 30px;
+  
+  .hamburger-line {
+    width: 22px;
+    height: 2px;
+    margin: 2px 0;
+  }
+  
+  .nav-links a {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.95rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 1.75rem;
+  }
+  
+  .typing-text {
+    font-size: 1.2rem;
+  }
+  
+  .hero-image img {
+    max-width: 110px;
+  }
+  
+  .about-card {
+    padding: 1rem;
+  }
+  
+  .about-card h3 {
+    font-size: 1rem;
+  }
+  
+  .about-card li {
+    font-size: 0.85rem;
+  }
+  
+  .education-content {
+    padding: 0.875rem;
+  }
+  
+  .education-content h3 {
+    font-size: 1rem;
+  }
+  
+  
+  
+  /* Footer improvements for ultra-small screens */
+  .social-links {
+    gap: 0.75rem;
+  }
+  
+  .social-link {
+    min-width: 55px;
+    padding: 0.75rem 0.5rem;
+    background-color: rgba(37, 99, 235, 0.12) !important;
+    border: 1px solid rgba(37, 99, 235, 0.2) !important;
+    color: #475569 !important;
+  }
+  
+  .social-link img {
+    width: 18px;
+    height: 18px;
+    margin-bottom: 0.4rem;
+  }
+  
+  .social-link span {
+    font-size: 0.7rem;
+  }
+  
+  .footer-section h3 {
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .footer-bottom {
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+  }
+  
+  /* Dark theme ultra-small footer */
+  body.dark-theme .social-link {
+    background-color: rgba(96, 165, 250, 0.12);
+    border-color: rgba(96, 165, 250, 0.2);
+  }
+}
+
+/* Small mobile devices (361px to 400px) */
+@media (min-width: 361px) and (max-width: 400px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .typing-text {
+    font-size: 1.3rem;
+  }
+  
+  .hero-image img {
+    max-width: 240px;
+  }
+  
+  .about-card {
+    padding: 1.125rem;
+  }
+  
+  .social-link {
+    min-width: 65px;
+    padding: 0.55rem;
+    background-color: rgba(37, 99, 235, 0.12) !important;
+    border: 1px solid rgba(37, 99, 235, 0.2) !important;
+    color: #475569 !important;
+  }
+  
+  /* Dark theme small mobile footer */
+  body.dark-theme .social-link {
+    background-color: rgba(96, 165, 250, 0.12);
+    border-color: rgba(96, 165, 250, 0.2);
+  }
+}
+
+/* Medium mobile devices (401px to 450px) */
+@media (min-width: 401px) and (max-width: 450px) {
+  .hero-content h1 {
+    font-size: 1.9rem;
+  }
+  
+  .typing-text {
+    font-size: 1.4rem;
+  }
+  
+  .hero-image img {
+    max-width: 260px;
+  }
+  
+  .about-card {
+    padding: 1.25rem;
+  }
+  
+  .social-link {
+    min-width: 70px;
+    padding: 0.6rem;
+    background-color: rgba(37, 99, 235, 0.12) !important;
+    border: 1px solid rgba(37, 99, 235, 0.2) !important;
+    color: #475569 !important;
+  }
+  
+  /* Dark theme medium mobile footer */
+  body.dark-theme .social-link {
+    background-color: rgba(96, 165, 250, 0.12);
+    border-color: rgba(96, 165, 250, 0.2);
+  }
+}
+
+/* Large mobile devices (451px to 500px) */
+@media (min-width: 451px) and (max-width: 500px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .typing-text {
+    font-size: 1.5rem;
+  }
+  
+  .hero-image img {
+    max-width: 280px;
+  }
+  
+  .about-card {
+    padding: 1.375rem;
+  }
+  
+  .social-link {
+    min-width: 75px;
+    padding: 0.65rem;
+    background-color: rgba(37, 99, 235, 0.12) !important;
+    border: 1px solid rgba(37, 99, 235, 0.2) !important;
+    color: #475569 !important;
+  }
+  
+  /* Dark theme large mobile footer */
+  body.dark-theme .social-link {
+    background-color: rgba(96, 165, 250, 0.12);
+    border-color: rgba(96, 165, 250, 0.2);
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .nav-links a:hover::after {
+    display: none;
+  }
+  
+  .about-card:hover {
+    transform: none;
+  }
+  
+  .social-link:hover {
+    transform: none;
+  }
+  
+  /* Increase touch targets */
+  .nav-links a {
+    padding: 0.5rem;
+  }
+  
+  .social-link {
+    min-height: 44px;
+  }
+  
+  /* Hamburger menu touch optimizations */
+  .hamburger {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  .hamburger-line {
+    margin: 2px 0;
+  }
+  
+  .nav-links a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .nav-links a::after,
+  .about-card,
+  .social-link {
+    transition: none;
+  }
+  
+  .about-card:hover {
+    transform: none;
+  }
+  
+  .social-link:hover {
+    transform: none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .about-card {
+    border: 2px solid #000;
+  }
+  
+  .education-item::before {
+    border: 2px solid #000;
+  }
+  
+  .social-link {
+    border: 1px solid #fff;
+  }
+}
+
+/* Dark mode support for mobile */
+@media (prefers-color-scheme: dark) {
+  /* Only apply if user prefers dark mode */
+  body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+  }
+  
+  .about-card {
+    background-color: #2a2a2a;
+    border-color: #404040;
+  }
+  
+  .about-card li {
+    color: #c0c0c0;
+  }
+  
+  .about-card strong {
+    color: #e0e0e0;
+  }
+  
+  .education-content {
+    background-color: #2a2a2a;
+  }
+}
+
+
+
+/* Mobile-specific navigation improvements */
+@media (max-width: 767px) {
+  /* Enhanced hamburger menu styles */
+  .hamburger {
+    margin-left: auto;
+  }
+  
+  .hamburger:active {
+    transform: scale(0.95);
+  }
+  
+  /* Smooth menu transitions */
+  .nav-links {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  
+  .nav-links a {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .nav-links a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.1), transparent);
+    transition: left 0.5s ease;
+  }
+  
+  .nav-links a:hover::before {
+    left: 100%;
+  }
+  
+  /* Additional mobile footer enhancements */
+  footer {
+    padding: 2.5rem 0 1.5rem;
+  }
+  
+  .footer-content {
+    padding: 0 1rem;
+  }
+  
+  .social-links {
+    margin-bottom: 2.5rem;
+  }
+  
+  .social-link:active {
+    transform: scale(0.95);
+  }
+}
+
+/* Mobile hero section improvements */
+@media (max-width: 767px) {
+  .hero-section {
+    background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+  }
+  
+  .hero-content {
+    order: 1;
+  }
+  
+  .hero-image {
+    order: 2;
+    margin-top: 1rem;
+  }
+}
+
+/* Mobile about section improvements */
+@media (max-width: 767px) {
+  .about-card {
+    margin-bottom: 1rem;
+  }
+  
+  .about-card:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Mobile education timeline improvements */
+@media (max-width: 767px) {
+  .education-timeline {
+    margin: 0 0.5rem;
+  }
+  
+  .education-item {
+    margin-left: 0.75rem;
+  }
+  
+  .education-content {
+    margin-left: 0.5rem;
+  }
+}
+
+/* Mobile footer improvements */
+@media (max-width: 767px) {
+  .social-links {
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .social-link {
+    flex: 0 0 auto;
+    min-width: 70px;
+    max-width: 80px;
+    margin: 0;
+    padding: 1rem 0.75rem;
+    background-color: rgba(37, 99, 235, 0.15) !important;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(37, 99, 235, 0.2) !important;
+    color: #475569 !important;
+  }
+  
+  .social-link:hover {
+    background-color: rgba(37, 99, 235, 0.25);
+    transform: translateY(-2px);
+    color: #2563eb;
+  }
+  
+  .social-link img {
+    width: 22px;
+    height: 22px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .social-link span {
+    font-size: 0.75rem;
+    font-weight: 600;
     text-align: center;
   }
-  .forthSection ul li a{
-    color: white;
-    text-decoration: none;
+  
+  .footer-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #1e293b;
   }
-  .forthSection img{
-    margin: 0 20px;
+  
+  .footer-bottom {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    color: #64748b;
   }
+  
+  .footer-bottom p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  
+  /* Dark theme mobile footer */
+  body.dark-theme .social-link {
+    background-color: rgba(96, 165, 250, 0.15);
+    border-color: rgba(96, 165, 250, 0.2);
+    color: #cbd5e1;
+  }
+  
+  body.dark-theme .social-link:hover {
+    background-color: rgba(96, 165, 250, 0.25);
+    color: #60a5fa;
+  }
+  
+  body.dark-theme .footer-section h3 {
+    color: #f1f5f9;
+  }
+  
+  body.dark-theme .footer-bottom {
+    color: #94a3b8;
+  }
+}
